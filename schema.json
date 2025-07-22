@@ -2,7 +2,7 @@
   "$metadata": {
     "type": "BasicIdentity",
     "uris": {
-      "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
+      "jsonLdContext": "https://vaishnavidg.github.io/schema/schema.jsonld"
     },
     "version": "1.0"
   },
