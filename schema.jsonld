@@ -1,0 +1,31 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "BasicIdentity": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "iden3-vocab": "urn:uuid:d4026ad9-5562-413b-bda0-cac2d44f2d71#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "fullName": {
+            "@id": "iden3-vocab:fullName",
+            "@type": "xsd:string"
+          },
+          "dob": {
+            "@id": "iden3-vocab:dob",
+            "@type": "xsd:string"
+          },
+          "nationality": {
+            "@id": "iden3-vocab:nationality",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:d48234f8-bd22-456c-9302-de5269f1894a"
+      }
+    }
+  ]
+}
