@@ -5,14 +5,18 @@
       "@version": 1.1,
       "id": "@id",
       "type": "@type",
-      "BasicIdentity": {
+      "PersonIdentity": {
         "@context": {
           "@propagate": true,
           "@protected": true,
-          "iden3-vocab": "urn:uuid:d4026ad9-5562-413b-bda0-cac2d44f2d71#",
+          "iden3-vocab": "urn:uuid:6bf9c7ab-820a-42f7-a3fa-b536ff000960#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
-          "fullName": {
-            "@id": "iden3-vocab:fullName",
+          "firstName": {
+            "@id": "iden3-vocab:firstName",
+            "@type": "xsd:string"
+          },
+          "lastName": {
+            "@id": "iden3-vocab:lastName",
             "@type": "xsd:string"
           },
           "dob": {
@@ -24,7 +28,7 @@
             "@type": "xsd:string"
           }
         },
-        "@id": "urn:uuid:d48234f8-bd22-456c-9302-de5269f1894a"
+        "@id": "urn:uuid:dc5bbd13-9e86-4df5-b7ca-3b97ec1bdc23"
       }
     }
   ]
