@@ -1,14 +1,14 @@
 {
   "$metadata": {
-    "type": "BasicIdentity",
+    "type": "PersonIdentity",
     "uris": {
-      "jsonLdContext": "https://vaishnavidg.github.io/schema/schema.jsonld"
+      "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
     },
     "version": "1.0"
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "A simple schema to represent a person's basic identity information. Includes attributes like full name, date of birth, and nationality. Useful for general identity verification use cases.",
-  "title": "Basic Identity Credential",
+  "description": "Basic details of person",
+  "title": "Person Identity",
   "properties": {
     "@context": {
       "type": [
@@ -101,26 +101,31 @@
           "format": "uri",
           "type": "string"
         },
-        "fullName": {
+        "firstName": {
           "type": "string",
-          "title": "Full Name",
-          "description": "The person's full legal name.",
-          "format": "date"
+          "title": "First Name",
+          "description": "first name of person"
+        },
+        "lastName": {
+          "type": "string",
+          "title": "Last Name",
+          "description": "last name of person"
         },
         "dob": {
           "type": "string",
-          "title": "Date of Birth",
-          "description": "\tThe person's date of birth.",
+          "title": "date of birth",
+          "description": "date of birth",
           "format": "date"
         },
         "nationality": {
           "type": "string",
           "title": "Nationality",
-          "description": "Country of citizenship"
+          "description": "Nationality"
         }
       },
       "required": [
-        "fullName",
+        "firstName",
+        "lastName",
         "dob",
         "nationality"
       ],
